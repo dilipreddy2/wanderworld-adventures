@@ -1,0 +1,578 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f8fafc;
+    color:#1e293b;
+    line-height:1.6;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo h2{
+    color:#f97316;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#f97316;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    background:url("../images/hero-banner.jpg");
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    background:rgba(15,23,42,0.75);
+    color:white;
+    padding:40px;
+    border-radius:12px;
+    max-width:750px;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn{
+    display:inline-block;
+    background:#f97316;
+    color:white;
+    text-decoration:none;
+    padding:12px 28px;
+    border-radius:6px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#ea580c;
+}
+
+/* =========================
+   PAGE BANNER
+========================= */
+
+.page-banner{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.page-banner h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:35px;
+}
+
+/* =========================
+   DESTINATIONS
+========================= */
+
+.destinations{
+    padding:70px 20px;
+}
+
+.destination-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.destination-card{
+    width:300px;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.destination-card:hover{
+    transform:translateY(-8px);
+}
+
+.destination-card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.destination-card h3{
+    padding:15px 15px 10px;
+}
+
+.destination-card p{
+    padding:0 15px 20px;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features{
+    padding:70px 20px;
+    background:white;
+}
+
+.feature-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.feature-box{
+    width:280px;
+    background:#f8fafc;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.feature-box h3{
+    color:#f97316;
+    margin-bottom:10px;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:70px 20px;
+}
+
+.about-image img{
+    width:500px;
+    height:350px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.about-content{
+    max-width:600px;
+}
+
+.about-content h2{
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.about-content p{
+    margin-bottom:15px;
+}
+
+/* =========================
+   MISSION & VISION
+========================= */
+
+.mission-vision{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:40px 20px;
+}
+
+.info-card{
+    width:350px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.info-card h2{
+    color:#f97316;
+    margin-bottom:10px;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:50px 20px;
+}
+
+.stat-box{
+    width:220px;
+    text-align:center;
+    background:#0f172a;
+    color:white;
+    padding:25px;
+    border-radius:10px;
+}
+
+.stat-box h2{
+    color:#f97316;
+    margin-bottom:10px;
+}
+
+/* =========================
+   TOURS
+========================= */
+
+.packages-section{
+    padding:70px 20px;
+}
+
+.package-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.package-card{
+    width:320px;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.package-card:hover{
+    transform:translateY(-8px);
+}
+
+.package-card img{
+    height:250px;
+    object-fit:cover;
+}
+
+.package-card h2{
+    padding:15px;
+}
+
+.package-card p{
+    padding:0 15px 15px;
+}
+
+.package-card ul{
+    list-style:none;
+    padding:0 15px 15px;
+}
+
+.package-card ul li{
+    margin:8px 0;
+}
+
+.package-card h3{
+    color:#f97316;
+    margin-bottom:15px;
+}
+
+/* =========================
+   ADVENTURE SECTION
+========================= */
+
+.adventure-section{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:70px 20px;
+    background:white;
+}
+
+.adventure-image img{
+    width:500px;
+    height:350px;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.adventure-content{
+    max-width:550px;
+}
+
+.adventure-content h2{
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.adventure-content p{
+    margin-bottom:20px;
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+
+.testimonials{
+    padding:70px 20px;
+    text-align:center;
+}
+
+.testimonial-card{
+    max-width:700px;
+    margin:20px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-section{
+    padding:70px 20px;
+}
+
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.gallery-card img{
+    height:250px;
+    object-fit:cover;
+}
+
+.gallery-card h3{
+    padding:15px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    padding:70px 20px;
+}
+
+.contact-info,
+.booking-form{
+    width:450px;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-info h2,
+.booking-form h2{
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.contact-info p{
+    margin-bottom:10px;
+}
+
+.booking-form form{
+    display:flex;
+    flex-direction:column;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.booking-form button{
+    border:none;
+    cursor:pointer;
+}
+
+/* =========================
+   TEAM SECTION
+========================= */
+
+.team-section{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.team-text{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.cta h2{
+    margin-bottom:20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#020617;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer h3{
+    color:#f97316;
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        margin-top:15px;
+    }
+
+    .nav-links li{
+        margin:10px 0;
+    }
+
+    .hero-content h1{
+        font-size:35px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .about-image img,
+    .adventure-image img{
+        width:100%;
+        height:250px;
+    }
+
+    .destination-card,
+    .package-card,
+    .feature-box,
+    .info-card,
+    .contact-info,
+    .booking-form{
+        width:100%;
+    }
+}
